@@ -1,0 +1,274 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Tajawal', sans-serif;
+}
+
+body {
+  color: #fff;
+  overflow-x: hidden;
+}
+
+#logo {
+  font-family: 'Baloo Bhaijaan 2' !important;
+  font-size: 28px;
+  font-weight: 600;
+  color: #14af40;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+}
+
+.navbar-nav a {
+  color: #14af40;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all ease 0.5s;
+}
+
+.navbar-nav a:hover {
+  color: #038d2a;
+}
+
+
+#card-btn {
+  background-color: #14af40;
+  color: #ffffff;
+  padding: 6px 15px;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  display: inline-block;
+  font-size: 1.1rem;
+  width: fit-content;
+  outline: none;
+  border: none;
+  position: relative;
+  z-index: 1;
+}
+
+.card {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.6s ease;
+}
+
+.card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.search-box {
+  display: flex;
+  border: 1px solid #14af40;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.search-box input {
+  border: none;
+  padding: 8px 12px;
+  background: transparent;
+  color: #000;
+  outline: none;
+  width: 180px;
+}
+
+.search-box input:focus {
+  background-color: #fff;
+  color: #000;
+}
+
+.search-box button {
+  background-color: #14af40;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+  transition: background ease 0.3s;
+  color: #000;
+}
+
+.search-box button:hover {
+  background-color: #038d2a;
+}
+
+.search-box button i ,
+.search-box input::placeholder {
+  font-size: 14px;
+}
+
+#card-btn:hover {
+  background-color: #038d2a;
+}
+
+footer {
+    background: #14af40;
+    color: white;
+    padding: 60px 0 0;
+    font-family: 'Tajawal', 'sans-serif';
+    direction: rtl;
+    line-height: 1.6;
+    margin-top: 20px;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  
+  .footer-section {
+    flex: 1;
+    min-width: 250px;
+    padding: 0 15px;
+  }
+  
+  .footer-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+    position: relative;
+    padding-bottom: 10px;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-weight: 600;
+    color: #fff;
+    text-align: right;
+  }
+  
+  .footer-section h3::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 50px;
+    height: 3px;
+    background: white;
+  }
+  
+  .footer-section p {
+    margin-bottom: 15px;
+    font-size: 1rem;
+    text-align: right;
+    padding-left: 10px;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+  
+  .footer-section ul li {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    padding-right: 5px;
+  }
+  
+  .footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+    padding: 5px 0;
+    width: 100%;
+    text-align: right;
+  }
+  
+  .footer-section ul li a:hover {
+    color: #e0e0e0;
+    transform: translateX(-5px);
+  }
+  
+  .footer-section ul li a::before {
+    content: "";
+    color: white;
+    margin-left: 8px;
+    font-size: 1.2rem;
+    position: absolute;
+    right: -5px;
+  }
+  
+  .footer-section p i {
+    margin-left: 10px;
+    font-size: 1.1rem;
+    min-width: 25px;
+    text-align: center;
+  }
+  
+  .footer-bottom {
+    background: #038d2a;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Tajawal', sans-serif;
+  }
+  
+  .footer-bottom p {
+    font-size: 1rem;
+    margin: 0;
+    padding: 0 15px;
+  }
+  
+  .footer-bottom span {
+    font-weight: 600;
+    color: #fff;
+  }
+  
+  .footer-section ul li:hover a::before {
+    animation: bounce 0.5s;
+  }
+
+  @keyframes bounce {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(-5px); }
+  }
+  
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      gap: 50px;
+    }
+    
+    .footer-section {
+      text-align: center;
+    }
+    
+    .footer-section h3 {
+      text-align: center;
+    }
+    
+    .footer-section h3::after {
+      right: 50%;
+      transform: translateX(50%);
+    }
+    
+    .footer-section ul li,
+    .footer-section p {
+      justify-content: center;
+      text-align: center;
+    }
+    
+    .footer-section ul li a {
+      text-align: center;
+      padding-right: 15px;
+    }
+    
+    .footer-section ul li a::before {
+      right: 0;
+    }
+  }

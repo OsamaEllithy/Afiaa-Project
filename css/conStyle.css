@@ -1,0 +1,342 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tajawal', sans-serif;
+}
+
+body {
+    color: #fff;
+    overflow-x: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: #f5f5f5;
+    position: relative;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #14af40;
+    margin-right: 50px;
+    font-family: 'Baloo Bhaijaan 2';
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    margin-left: 50px;
+}
+
+ul a {
+    color: #14af40;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color ease 0.5s;
+}
+
+ul a:hover {
+    color: #038d2a;
+}
+
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 0;
+    padding: 0;
+    background-color: transparent;
+    direction: rtl;
+    height: 85.5vh;
+}
+
+.contact-section::before,
+.contact-section-container::after {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(20, 175, 64, 0.1);
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.contact-section::before {
+    top: 55px;
+    right: 580px;
+}
+
+.contact-form-container {
+    flex: 1;
+    padding: 60px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-form {
+    width: 100%;
+}
+
+.contact-form h2 {
+    font-size: 2rem;
+    color: #14af40;
+    margin-block: 20px;
+}
+
+.contact-form label {
+    display: flex;
+    margin-bottom: 8px;
+    color: #14af40;
+    font-weight: 500;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: 1px solid #14af40;
+    transform: scale(1.03);
+    transition: 0.2s ease;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 50px;
+}
+
+.contact-form button {
+    background-color: #14af40;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-left: 300px;
+}
+
+.contact-form button:hover {
+    background-color: #038d2a;
+    transform: scale(1.05);
+}
+
+.content-text {
+    flex: 1;
+    background-image: url('../img/banner-contact.png');
+    background-position: center;
+    background-size: cover;
+    padding: 30px;
+    display: flex;
+    border-bottom-right-radius: 80px;
+    border-bottom-left-radius: 80px;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: #14af40;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.social-links a:hover {
+    transform: scale(1.2);
+}
+
+footer {
+    background: #14af40;
+    color: white;
+    padding: 60px 0 0;
+    font-family: 'Tajawal', sans-serif;
+    direction: rtl;
+    line-height: 1.6;
+    margin-top: 20px;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  
+  .footer-section {
+    flex: 1;
+    min-width: 250px;
+    padding: 0 15px;
+  }
+  
+  .footer-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+    position: relative;
+    padding-bottom: 10px;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    font-weight: 600;
+    color: #fff;
+    text-align: right;
+  }
+  
+  .footer-section h3::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 50px;
+    height: 3px;
+    background: white;
+  }
+  
+  .footer-section p {
+    margin-bottom: 15px;
+    font-size: 1rem;
+    text-align: right;
+    padding-left: 10px;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+  
+  .footer-section ul li {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+    padding-right: 5px;
+  }
+  
+  .footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+    padding: 5px 0;
+    width: 100%;
+    text-align: right;
+  }
+  
+  .footer-section ul li a:hover {
+    color: #e0e0e0;
+    transform: translateX(-5px);
+  }
+  
+  .footer-section ul li a::before {
+    content: "";
+    color: white;
+    margin-left: 8px;
+    font-size: 1.2rem;
+    position: absolute;
+    right: -5px;
+  }
+  
+  .footer-section p i {
+    margin-left: 10px;
+    font-size: 1.1rem;
+    min-width: 25px;
+    text-align: center;
+  }
+  
+  .footer-bottom {
+    background: #038d2a;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Tajawal', sans-serif;
+  }
+  
+  .footer-bottom p {
+    font-size: 1rem;
+    margin: 0;
+    padding: 0 15px;
+  }
+  
+  .footer-bottom span {
+    font-weight: 600;
+    color: #fff;
+  }
+  
+  .footer-section ul li:hover a::before {
+    animation: bounce 0.5s;
+  }
+
+  @keyframes bounce {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(-5px); }
+  }
+  
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+      gap: 50px;
+    }
+    
+    .footer-section {
+      text-align: center;
+    }
+    
+    .footer-section h3 {
+      text-align: center;
+    }
+    
+    .footer-section h3::after {
+      right: 50%;
+      transform: translateX(50%);
+    }
+    
+    .footer-section ul li,
+    .footer-section p {
+      justify-content: center;
+      text-align: center;
+    }
+    
+    .footer-section ul li a {
+      text-align: center;
+      padding-right: 15px;
+    }
+    
+    .footer-section ul li a::before {
+      right: 0;
+    }
+  }
