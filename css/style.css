@@ -162,7 +162,7 @@ body {
 
 .banner-image {
   flex: 1;
-  background-image: url('../img/banner-homepage.png');
+  background-image: url('../img/banner-homepage_optimized.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
