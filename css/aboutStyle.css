@@ -60,7 +60,7 @@
 
 .main-right {
   flex: 1;
-  background-image: url('../img/banner-about.png');
+  background-image: url('../img/banner-about_optimized.png');
   background-position: center;
   background-size: cover;
   border-bottom-left-radius: 80px;
